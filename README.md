@@ -3,7 +3,7 @@
 
 A web application for finding delicious recipes. Explore a vast collection of mouthwatering recipes, ranging from tantalizing appetizers to delectable main courses and sinfully indulgent desserts. This recipe finding website offers a user-friendly interface, curated recipe categories, and helpful cooking tips to elevate your culinary experience.
 
-### Preview
+## Preview
 
 ![Recipe Finder App Preview](preview.png)
 
