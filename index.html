@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Recipe Finder App</h1>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search recipes By Name">
+      <button id="search-button">Search</button> <br>
+      <select id="first-letter-select">
+        <option value="">Search Recipes By First Letter</option>
+      </select> <br>
+      <button id="random-button">Random Meal</button>
+    </div>
+  </header>
+
+  <div id="header-paragraph">
+     <p>Welcome to our recipe finding website, where culinary inspiration meets convenience! Whether you're a seasoned chef or a passionate home cook, we've got you covered with a vast collection of mouthwatering recipes at your fingertips. From tantalizing appetizers to delectable main courses, and from sinfully indulgent desserts to wholesome family-friendly meals, our platform is your go-to destination for all things delicious. With our user-friendly search features, curated recipe categories, and helpful cooking tips, you'll embark on a delightful culinary adventure that will elevate your kitchen skills and satisfy your taste buds. Get ready to explore, discover, and create unforgettable culinary experiences with our extensive recipe database. Let the flavorsome journey begin!</p>
+  </div>
+
+  <main>
+    <div id="row1">
+      <h2>Meal Categories</h2>
+        <div class="categories">
+          <div id="category-container" class="results-container"></div>
+        </div>
+
+        
+        <h2>Meal Areas</h2>
+        <div class="areas">
+          <div id="area-container" class="results-container"></div>
+        </div>
+    </div>
+
+    <div id="row2">
+        <div class="recipes">
+          <h2>Recipes Search Results</h2>
+          <div id="recipe-container" class="results-container"></div>
+        </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
