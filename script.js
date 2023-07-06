@@ -307,7 +307,26 @@ randomButton.addEventListener('click', () => {
   getRandomMeal();
 });
 
+//Random Meal Function
+async function getRandomMeal() {
+  try {
+    const response = await fetch('https://www.themealdb.com/api/json/v1/1/random.php');
+    if (!response.ok) {
+      throw new Error('Request failed');
+    }
+    const data = await response.json();
 
+    if (data.meals) {
+      displayRecipes(data.meals);
+      scrollToResultsView();
+    } else {
+      recipeContainer.innerHTML = '<p>No random meal found.</p>';
+      scrollToResultsView();
+    }
+  } catch (error) {
+    recipeContainer.innerHTML = `<p>Error: ${error.message}</p>`;
+  }
+}
 
 
 
