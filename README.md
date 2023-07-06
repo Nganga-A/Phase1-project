@@ -10,9 +10,9 @@ A web application for finding delicious recipes. Explore a vast collection of mo
 ## Features
 - Search recipes by name
 - Search recipes by the first letter
-- Random meal generator
-- Browse meal categories and areas
-- Detailed recipe instructions and ingredients
+- Random meal recipe generator
+- Browse meal recipes by categories and areas
+- Display detailed recipe instructions and ingredients
 
 ## Technologies Used
 - HTML
@@ -29,6 +29,10 @@ To get a local copy of this project up and running, follow these steps:
 ## API Reference
 
 This project utilizes the [TheMealDB API](https://www.themealdb.com/api.php) to fetch recipe data.
+
+## Author
+
+Created by [Abed Nganga Njuguna ](https://github.com/Nganga-A)
 
 ## License
 
