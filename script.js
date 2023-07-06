@@ -17,7 +17,12 @@ searchButton.addEventListener('click', () => {
    
 });
 
-
+//Clear Search Input Function
+function clearSearchInput(inputElement) {
+    setTimeout(() => {
+      inputElement.value = '';
+    }, 4000);
+}
 
 
 
@@ -328,7 +333,10 @@ async function getRandomMeal() {
   }
 }
 
-
+function scrollToResultsView() {
+     const recipeContainer = document.getElementById('recipe-container');
+      recipeContainer.scrollIntoView({ behavior: 'smooth' });
+}
 
 // Call the fetchMealCategories and fetchMealAreas functions when the page loads
 window.addEventListener('DOMContentLoaded', () => {
