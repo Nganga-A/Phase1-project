@@ -74,6 +74,7 @@ function displayRecipes(recipes) {
   });
 }
 
+
 //Search by first Letter
 const firstLetterSelect = document.getElementById('first-letter-select');
 
@@ -101,6 +102,7 @@ function clearSelectInput (selectElement) {
     selectElement.value = '';
   }, 4000); //4 seconds
 }
+
 
 
 async function searchRecipesByFirstName(firstName) {
@@ -146,6 +148,7 @@ async function fetchRecipeDetails(recipeId) {
   }
 }
 
+
 //Display Recipe Details
 function displayRecipeDetails(recipe) {
   recipeContainer.innerHTML = '';
@@ -175,9 +178,9 @@ function displayRecipeDetails(recipe) {
   recipeCard.appendChild(area);
   recipeCard.appendChild(instructions);
 
-  recipeContainer.appendChild(recipeCard);
-  
+  recipeContainer.appendChild(recipeCard); 
 }
+
 
 // Fetch and display all meal categories
 async function fetchMealCategories() {
@@ -197,6 +200,7 @@ async function fetchMealCategories() {
     categoryContainer.innerHTML = `<p>Error: ${error.message}</p>`;
   }
 }
+
 
 function displayMealCategories(categories) {
   categoryContainer.innerHTML = '';
@@ -226,6 +230,7 @@ function displayMealCategories(categories) {
   });
 }
 
+
 async function searchRecipesByCategory(category) {
   try {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
@@ -246,6 +251,7 @@ async function searchRecipesByCategory(category) {
   }
 }
 
+
 // Fetch and display all meal areas
 async function fetchMealAreas() {
   try {
@@ -264,6 +270,7 @@ async function fetchMealAreas() {
     areaContainer.innerHTML = `<p>Error: ${error.message}</p>`;
   }
 }
+
 
 function displayMealAreas(areas) {
   areaContainer.innerHTML = '';
@@ -287,6 +294,7 @@ function displayMealAreas(areas) {
   });
 }
 
+
 async function searchRecipesByArea(area) {
   try {
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${area}`);
@@ -307,10 +315,12 @@ async function searchRecipesByArea(area) {
   }
 }
 
+
 //Random Meal Button Generator
 randomButton.addEventListener('click', () => {
   getRandomMeal();
 });
+
 
 //Random Meal Function
 async function getRandomMeal() {
