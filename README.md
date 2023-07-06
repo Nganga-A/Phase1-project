@@ -27,7 +27,7 @@ To get a local copy of this project up and running, follow these steps:
 3. Open the `index.html` file in your preferred browser.
 
 ## Deployment
-This project is deployed using Github Pages. You can access the live version of the app [here.](nganga-a.github.io/Phase1-project/)
+This project is deployed using Github Pages. You can access the live version of the app [here.](https://nganga-a.github.io/Phase1-project/)
 
 ## API Reference
 
