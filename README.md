@@ -26,6 +26,9 @@ To get a local copy of this project up and running, follow these steps:
 2. Navigate to the project directory: `cd recipe-finder-app`
 3. Open the `index.html` file in your preferred browser.
 
+Deployment
+This project is deployed using Github Pages. You can access the live version of the app [here.](nganga-a.github.io/Phase1-project/)
+
 ## API Reference
 
 This project utilizes the [TheMealDB API](https://www.themealdb.com/api.php) to fetch recipe data.
