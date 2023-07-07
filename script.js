@@ -1,5 +1,3 @@
-
-
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 const categoryContainer = document.getElementById('category-container');
@@ -23,7 +21,6 @@ function clearSearchInput(inputElement) {
       inputElement.value = '';
     }, 4000);
 }
-
 
 
 // SEARCH RECIPES
@@ -126,7 +123,6 @@ async function searchRecipesByFirstName(firstName) {
 }
 
 
-
 // Fetch and display recipe details by ID
 async function fetchRecipeDetails(recipeId) {
   try {
@@ -224,7 +220,6 @@ function displayMealCategories(categories) {
 
       searchRecipesByCategory(categoryQuery);
     });
-
 
     categoryContainer.appendChild(categoryCard);
   });
@@ -343,6 +338,7 @@ async function getRandomMeal() {
   }
 }
 
+// Function to scroll to results view
 function scrollToResultsView() {
      const recipeContainer = document.getElementById('recipe-container');
       recipeContainer.scrollIntoView({ behavior: 'smooth' });
